@@ -12,7 +12,6 @@ function startGame() {
         attempts.push(distance);
 
         if (distance < 30) {
-            console.log('Win');
             win.innerHTML = 'Win';
             counter = 0;
         }
