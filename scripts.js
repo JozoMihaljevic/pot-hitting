@@ -17,7 +17,9 @@ function startGame() {
             counter = 0;
         }
 
-        if (attempts[attempts.length - 1] > attempts[attempts.length - 2]) {
+        if (attempts.length < 3) {
+            message.innerHTML = '';
+        } else if (attempts[attempts.length - 1] > attempts[attempts.length - 2]) {
             message.innerHTML = 'Cold';
         } else {
             message.innerHTML = 'Hot';
